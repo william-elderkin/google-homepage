@@ -4,7 +4,9 @@ An attempt at cloning the homepage of google.
 
 Skills:
 
--breaking down of current google homepage into small pieces to recreate one by one.
+-breaking down of current google homepage into appropriate pieces to recreate one by one.
+
+
 
 Languages:
 
