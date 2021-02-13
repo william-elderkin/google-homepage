@@ -1,0 +1,19 @@
+<style>
+.item-a {
+    grid-area: header1;
+}
+.item-b {
+    grid-area: header2;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header1 header2 header3 header4 header5 header6"
+        "image image image"
+        ". search ."
+        ". buttons buttons"
+        "footer footer footer";
+}
+</style>

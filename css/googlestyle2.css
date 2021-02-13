@@ -1,0 +1,21 @@
+<style>
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: normal;
+    height: 600px;
+}
+.header-item {
+    background: red;
+    font-size: 36;
+    width: 200px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    margin: 10px
+    
+}
