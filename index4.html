@@ -15,6 +15,7 @@ header {
     height: 75px;
     justify-content: space-between;
     padding: 15px;
+    font-size: 14px;
 }
 .header-item-left {
     display: flex;
@@ -46,7 +47,7 @@ header {
     display: flex;
     padding: 5px;
 }
-.account {
+.signin {
     display: flex;
     padding: 5px;
 }
@@ -90,7 +91,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    font-size: 14px;
     height: 50px;
     justify-content: space-between;
     padding: 15px;
@@ -100,32 +101,58 @@ footer {
 }
 .footer-item-left {
     display: flex;
-    
     align-self: flex-end;
+}
+.advertising {
+    display: flex;
+    padding: 5px;
+}
+.business {
+    display: flex;
+    padding: 5px;
+}
+.how {
+    display: flex;
+    padding: 5px;
 }
 .footer-item-center {
     display: flex;
-   
     align-self: flex-start;
+}
+.carbon {
+    display: flex;
+    padding: 5px;
 }
 .footer-item-right {
     display: flex;
-    
     align-self: flex-end;
 }
-img{
+.privacy {
+    display: flex;
+    padding: 5px;
+}
+.terms {
+    display: flex;
+    padding: 5px;
+}
+.settings {
+    display: flex;
+    padding: 5px;
+}
+#img-google {
     height: 92px;
     width: 272px;
 }
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: Dodgerblue;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
+  border-radius:4px;
 }
 </style>
 
@@ -141,13 +168,13 @@ img{
         <div class="gmail"><a href="#gmail">Gmail</a></div>
         <div class="images"><a href="#images">Images</a></div>
         <div class="apps"><a href="#apps">Apps</a></div>
-        <div class="account"><a href="#account">Account</a></div>
+        <div class="button">Sign In</div>
     </div>
 
 </header>
 
     <div class="img-container">
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+        <img id="img-google" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
     </div>
 <div class="form-container">
     <input type="text" placeholder="?">
@@ -158,16 +185,16 @@ img{
 </div>
 <footer>
     <div class="footer-item-left">
-    <a href="#advertising"> Advertising </a>
-    <a href="#business"> Business </a> 
-    <a href="#howsearchworks"> How Search works </a>
+    <div class="advertising"><a href="#advertising">Advertising</a></div>
+    <div class="business"><a href="#business">Business</a></div> 
+    <div class="how"><a href="#howsearchworks"> How Search works </a></div>
     </div>
     <div class="footer-item-center">
-    <a href="carbonneutral">Carbon Neutral Since 2007</a>
+    <div class="carbon"><a href="carbonneutral"><img src="carbon.png">Carbon Neutral Since 2007</a></div>
     </div>
     <div class="footer-item-right"> 
-    <a href="privacy">Privacy</a>
-    <a href="terms">Terms</a>
-    <a href="settings">Settings</a>
+    <div class="privacy"><a href="privacy">Privacy</a></div>
+    <div class="terms"><a href="terms">Terms</a></div>
+    <div class="settings"><a href="settings">Settings</a></div>
     </div>
 </footer>
