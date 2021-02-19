@@ -50,9 +50,32 @@
     height: 100px;
     justify-content: space-between;
 }
+.footer-item-left {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.footer-item-center {
+    display: flex;
+    justify-content: center;
+}
+.footer-item-right {
+    display: flex;
+    justify-content: flex-end;
+}
 img{
     height: 92px;
     width: 272px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 </style>
 
@@ -69,17 +92,23 @@ img{
     <div class="img-container">
         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
     </div>
-<div class="form">Form</div>
-<div class="search">Search</div>
-<div class="buttons">Button</div>
+<center>
+<input type="text" id="gsearch" name="firstname" placeholder="?"></center>
+<center><button>Google Search</button>
+<button>I'm Feeling Lucky</button></center>
 
 <footer class="footer-container">
-    
-    <a href="#advertising">Advertising</a>
-    <a href="#business">Business</a>
-    <a href="#howsearchworks">How Search works</a>
-    <a href="carbonneutral">Carbon Neutral Since 2007</a> 
+    <div class="footer-item-left">
+    <a href="#advertising"> Advertising </a>
+    <a href="#business"> Business </a> 
+    <a href="#howsearchworks"> How Search works </a>
+    </div>
+    <div class="footer-item-right">
+    <a href="carbonneutral">Carbon Neutral Since 2007</a>
+    </div>
+    <div class="footer-item-right"> 
     <a href="privacy">Privacy</a>
     <a href="terms">Terms</a>
     <a href="settings">Settings</a>
+    </div>
 </footer>
