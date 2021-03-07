@@ -1,31 +1,186 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<link href="css/reset.css" rel="stylesheet" />
-<link href="css/googlestyle2.css" rel="stylesheet" />
+ <style>
+
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    color: black;
+    margin: 5px;
+    justify-content: space-between;
+}
+.header-l {
+    align-self: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+.header-r {
+    align-self: center;
+    padding: 10px;
+    align-items: flex-end;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+a:hover {
+    text-decoration: underline;
+}
+.img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: auto;
+    padding: 75px 0px 0px 0px;
+}
+.form-container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50px;
+    width: auto;
+    justify-content: center;
+    padding: 15px 30px 0px 30px;
+    background-color: transparent;
+}
+input[type=text], select, textarea{
+  width: 600px;
+  height: 50px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    justify-content: center;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+    height: 47px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(242, 242, 242);
+    margin-top: 125px;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0;
+}
+.footer-item-left {
+    display: flex;
+    align-self: center;
+    padding: 5px;
+    order: 1;
+}
+
+.footer-item-center {
+    display: flex;
+    align-self: center;
+    padding: 5px;
+    order: 2;
+}
+
+.footer-item-right {
+    display: flex;
+    align-self: center;
+    padding: 5px;
+    order: 3;
+}
+@media (max-width: 1080px) {
+    footer {
+    height: 93px;
+    align-items: center;
+}
+    .footer-item-left {order: 2;
+        align-self: flex-end;}
+    .footer-item-center {order: 1;
+        position: absolute;
+        align-self: flex-start;
+        justify-content: center;
+        width: 100%;
+        }
+    .footer-item-right {order: 3;
+        align-self: flex-end;}
+}
+#img-carbon {
+    height: 12.25px;
+    width: 14px;
+}
+#img-google {
+    height: 92px;
+    width: 272px;
+}
+.button {
+  background-color: rgb(26, 115, 232);
+  border: none;
+  padding: 5px;
+  text-align: baseline;
+  display: inline-block;
+  font-size: 14px;
+  border-radius:4px;
+  color: white;
+}
+ </style>
 </head>
 
 <body>
-<header class="header-container">
-    <div class="header-item"><a href="#about">About</a></div>
-    <div class="header-item"><a href="#store">Store</a></div>
-    <div class="header-item"><a href="#gmail">Gmail</a></div>
-    <div class="header-item"><a href="images">Images</a></div>
-    <div class="header-item"><a href="apps">Apps</a></div>
-    <div class="header-item"><a href="account">Account</a></div>
+<header>
+    <div class="header-l">
+    <a href="#about">About</a>
+    <a href="#store">Store</a></div>
+    <div  class="header-r">
+    <a href="#gmail">Gmail</a>
+    <a href="#images">Images</a>
+    <a href="#apps">Apps</a>
+    <a class="button" href="#signin">Sign In</a></div>
 </header>
-<div class="image">
-<center><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"></center>
+
+    <div class="img-container">
+        <img id="img-google" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+    </div>
+<div class="form-container">
+    <input type="text" placeholder="?">
 </div>
-<div class="search"></search>
-<div class="buttons"></buttons>
-<div class="footer">
+<div class="button-container">
+    <center><button>Google Search</button>
+    <button>I'm Feeling Lucky</button></center>
+</div>
+<footer>
+    <div class="footer-item-left">
     <a href="#advertising">Advertising</a>
-    <a href="#business">Business</a>
-    <a href="#howsearchworks">How Search works</a>
-    <a href="carbonneutral">Carbon Neutral Since 2007</a> 
+    <a href="#business">Business</a> 
+    <a href="#howsearchworks"> How Search works </a>
+    </div>
+    <div class="footer-item-center">
+    <a href="carbonneutral"><img id="img-carbon" src="carbon.png">Carbon Neutral Since 2007</a>
+    </div>
+    <div class="footer-item-right"> 
     <a href="privacy">Privacy</a>
     <a href="terms">Terms</a>
     <a href="settings">Settings</a>
-</div>
+    </div>
+</footer>
