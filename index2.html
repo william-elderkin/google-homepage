@@ -80,51 +80,57 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 14px;
+    a color: #70757a;
     height: 47px;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgb(242, 242, 242);
     margin-top: 125px;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0;
 }
-.footer-item-left {
+.footer-item-ad {
     display: flex;
     align-self: center;
     padding: 5px;
     order: 1;
 }
 
-.footer-item-center {
+.footer-item-carbon {
     display: flex;
     align-self: center;
     padding: 5px;
     order: 2;
+    color: #70757a;
 }
 
-.footer-item-right {
+.footer-item-privacy {
     display: flex;
     align-self: center;
     padding: 5px;
     order: 3;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
     footer {
     height: 93px;
-    align-items: center;
 }
-    .footer-item-left {order: 2;
-        align-self: flex-end;}
-    .footer-item-center {order: 1;
-        position: absolute;
-        align-self: flex-start;
-        justify-content: center;
+    
+    .footer-item-ad {
+        display: flex;
+        order: 2;
+        background-color: transparent;}
+    .footer-item-carbon {
+        display: flex;
+        order: 1;
         width: 100%;
-        }
-    .footer-item-right {order: 3;
-        align-self: flex-end;}
+        justify-content: center;
+        background-color: transparent;}
+    .footer-item-privacy {
+        display: flex;
+        order: 3;
+        background-color: transparent;}
 }
 #img-carbon {
     height: 12.25px;
@@ -134,11 +140,11 @@ footer {
     height: 92px;
     width: 272px;
 }
-.button {
+.button-sign-in {
   background-color: rgb(26, 115, 232);
   border: none;
   padding: 5px;
-  text-align: baseline;
+  text-align: center;
   display: inline-block;
   font-size: 14px;
   border-radius:4px;
@@ -156,7 +162,7 @@ footer {
     <a href="#gmail">Gmail</a>
     <a href="#images">Images</a>
     <a href="#apps">Apps</a>
-    <a class="button" href="#signin">Sign In</a></div>
+    <a class="button-sign-in" href="#signin">Sign In</a></div>
 </header>
 
     <div class="img-container">
@@ -170,15 +176,18 @@ footer {
     <button>I'm Feeling Lucky</button></center>
 </div>
 <footer>
-    <div class="footer-item-left">
+   
+        <div class="footer-item-carbon">
+        <a href="carbonneutral"><img id="img-carbon" src="carbon.png">Carbon Neutral Since 2007</a>
+        </div>
+    
+    <div class="footer-item-ad">
     <a href="#advertising">Advertising</a>
     <a href="#business">Business</a> 
     <a href="#howsearchworks"> How Search works </a>
     </div>
-    <div class="footer-item-center">
-    <a href="carbonneutral"><img id="img-carbon" src="carbon.png">Carbon Neutral Since 2007</a>
-    </div>
-    <div class="footer-item-right"> 
+    
+    <div class="footer-item-privacy"> 
     <a href="privacy">Privacy</a>
     <a href="terms">Terms</a>
     <a href="settings">Settings</a>
